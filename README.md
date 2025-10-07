@@ -215,12 +215,12 @@ cd EduBoard-Arun
 **Personal Details:**
 * **Name**: Arun Chinthalapally
 * **Roll Number**: 210303105368
-* **Email**: arunchinthalapally248@gmail.com
+* **Email**: 210303105368@paruluniversity.ac.in
 
 **Academic Details:**
 * **College**: Parul University, Vadodara
 * **Department**: Computer Science Engineering
-* **Current Academic Status**: Active Student
+* **Current Academic Status**: Graduated Student
 
 ---
 
