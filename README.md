@@ -89,9 +89,8 @@
 
 ### 🏠 **Desktop View**
 *Full dashboard layout with sidebar navigation and all sections*
+![Desktop View](https://github.com/arun-248/EduBoard-Arun/blob/main/Desktop_View.png)
 
-### 📱 **Mobile View**
-*Responsive design adapting to smaller screens*
 
 </div>
 
