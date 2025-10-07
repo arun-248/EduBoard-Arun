@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduBoard – Arun Chinthalapally</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<input id="tab-dashboard" name="nav" type="radio" checked>
+<input id="tab-subjects" name="nav" type="radio">
+<input id="tab-attendance" name="nav" type="radio">
+<input id="tab-profile" name="nav" type="radio">
+<input id="tab-settings" name="nav" type="radio">
+
+<nav class="sidebar" aria-label="Primary">
+  <div class="brand">EduBoard</div>
+  <ul class="nav-list">
+    <li><label for="tab-dashboard" tabindex="0"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></label></li>
+    <li><label for="tab-subjects" tabindex="0"><i class="fa-solid fa-book"></i><span>Subjects</span></label></li>
+    <li><label for="tab-attendance" tabindex="0"><i class="fa-solid fa-user-check"></i><span>Attendance</span></label></li>
+    <li><label for="tab-profile" tabindex="0"><i class="fa-solid fa-id-card"></i><span>Profile</span></label></li>
+    <li><label for="tab-settings" tabindex="0"><i class="fa-solid fa-gear"></i><span>Settings</span></label></li>
+  </ul>
+</nav>
+
+<div class="layout">
+  <header class="topbar">
+    <div class="user">
+      <img src="assets/images/avatar.jpeg" alt="Arun Chinthalapally" class="avatar">
+      <div class="user-meta">
+        <h1 class="student-name">Arun Chinthalapally</h1>
+        <p class="student-sub">B.Tech CSE, Parul University</p>
+      </div>
+    </div>
+    <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i></button>
+  </header>
+
+  <main class="main" role="main">
+    <section class="view dashboard">
+      <section class="cards">
+        <article class="card"><h3>GPA</h3><p class="stat">7.35</p></article>
+        <article class="card"><h3>Attendance</h3><p class="stat">95%</p></article>
+        <article class="card"><h3>Assignments Due</h3><p class="stat">3</p></article>
+        <article class="card"><h3>Total Credits</h3><p class="stat">160</p></article>
+      </section>
+      <section class="deadlines">
+        <h2>Upcoming Deadlines</h2>
+        <ul class="deadlines-list">
+          <li><span class="badge">Oct 15</span> AI Project Report</li>
+          <li><span class="badge">Oct 20</span> Data Analytics Assignment</li>
+          <li><span class="badge">Oct 25</span> Machine Learning Lab Exam</li>
+          <li><span class="badge">Nov 02</span> Cybersecurity Case Study</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="view subjects">
+      <h2>Subject Progress</h2>
+      <div class="table-wrap" role="region" aria-label="Subject progress table">
+        <table class="table">
+          <thead>
+            <tr><th>Subject</th><th>Progress</th><th>Completion</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Artificial Intelligence</td><td><div class="bar"><span style="width:85%"></span></div></td><td>85%</td></tr>
+            <tr><td>Machine Learning</td><td><div class="bar"><span style="width:78%"></span></div></td><td>78%</td></tr>
+            <tr><td>Data Analytics</td><td><div class="bar"><span style="width:90%"></span></div></td><td>90%</td></tr>
+            <tr><td>Computer Vision</td><td><div class="bar"><span style="width:72%"></span></div></td><td>72%</td></tr>
+            <tr><td>Data Structures & Algorithms</td><td><div class="bar"><span style="width:88%"></span></div></td><td>88%</td></tr>
+            <tr><td>Cybersecurity</td><td><div class="bar"><span style="width:75%"></span></div></td><td>75%</td></tr>
+            <tr><td>Soft Skills</td><td><div class="bar"><span style="width:95%"></span></div></td><td>95%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="view attendance">
+      <h2>Attendance Summary</h2>
+      <div class="cards">
+        <article class="card"><h3>Overall</h3><p class="stat">95%</p></article>
+        <article class="card"><h3>This Month</h3><p class="stat">96%</p></article>
+        <article class="card"><h3>Last Month</h3><p class="stat">94%</p></article>
+        <article class="card"><h3>Shortage Alerts</h3><p class="stat">0</p></article>
+      </div>
+      <div class="table-wrap" role="region" aria-label="Attendance by subject">
+        <table class="table">
+          <thead>
+            <tr><th>Subject</th><th>Present</th><th>Total</th><th>Attendance</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Artificial Intelligence</td><td>28</td><td>30</td><td>93%</td></tr>
+            <tr><td>Machine Learning</td><td>27</td><td>28</td><td>96%</td></tr>
+            <tr><td>Data Analytics</td><td>29</td><td>30</td><td>97%</td></tr>
+            <tr><td>Computer Vision</td><td>26</td><td>28</td><td>93%</td></tr>
+            <tr><td>DSA</td><td>35</td><td>36</td><td>97%</td></tr>
+            <tr><td>Cybersecurity</td><td>25</td><td>27</td><td>93%</td></tr>
+            <tr><td>Soft Skills</td><td>19</td><td>20</td><td>95%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="view profile">
+      <div class="profile-card">
+        <img src="assets/images/avatar.jpeg" alt="Arun Chinthalapally" class="profile-avatar">
+        <h2>Student Profile</h2>
+        <ul class="profile-info">
+          <li><strong>Name:</strong> Arun Chinthalapally</li>
+          <li><strong>Roll No:</strong> 210303105368</li>
+          <li><strong>Email:</strong> <a href="mailto:210303105368@paruluniversity.ac.in">210303105368@paruluniversity.ac.in</a></li>
+          <li><strong>College:</strong> Parul University, Vadodara</li>
+          <li><strong>Department:</strong> Computer Science Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="view settings">
+      <h2>Settings</h2>
+      <div class="settings-grid">
+        <div class="setting-card">
+          <h3>Theme</h3>
+          <p>Light</p>
+        </div>
+        <div class="setting-card">
+          <h3>Notifications</h3>
+          <p>Enabled</p>
+        </div>
+        <div class="setting-card">
+          <h3>Privacy</h3>
+          <p>Standard</p>
+        </div>
+        <div class="setting-card">
+          <h3>Language</h3>
+          <p>English</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer" role="contentinfo">
+  <p>© 2025 EduBoard – Arun Chinthalapally</p>
+</footer>
+</body>
+</html>
